@@ -1,0 +1,139 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.sidebar {
+    position: absolute;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #14213D;
+}
+
+    .sidebar ul li a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        box-sizing: border-box;
+        padding-left: 40px;
+        color: #ffffff;
+        margin-top: 20px;
+    }
+
+    .sidebar ul {
+        padding-top: 30px;
+    }
+
+        .sidebar ul li:hover a {
+            padding-left: 60px;
+            color: #FFB703;
+            transition: 0.5s;
+            border-left: 5px #FFB703 solid;
+            border-right: 5px #FFB703 solid;
+            border-radius: 10px;
+        }
+
+.img-Con {
+    text-align: center;
+}
+
+header img {
+    padding-top: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+header {
+    background: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #14213D;
+    border-radius: 30%;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px
+}
+
+label #cancel {
+    z-index: 9999;
+    left: -250px;
+    top: 17px;
+    padding: 6px 12px;
+    font-size: 30px;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+    transition: 0.5s;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 200px;
+}
+
+#check:checked ~ section {
+    margin-left: 250px;
+    transition: 0.5s;
+}
+
+#Main {
+    background: url(/css/Images/wp3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    color: white;
+}
+
+    #Main a {
+        position: relative;
+        font-weight: bold;
+        height: 100vh;
+        color: #ffffff;
+        font-size: 20px;
+        margin-top: 1500px;
+        padding: 15px;
+        border: 2px #ffffff solid;
+        border-radius: 20px;
+    }
+
+        #Main a:hover {
+            color: #FFB703;
+            border: 2px #FFB703 solid;
+            transition: 0.5s;
+        }

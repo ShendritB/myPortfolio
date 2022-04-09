@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyPortfolio</title>
+    <link rel="stylesheet" href="/css/LayoutSS.css" />
+    <link rel="stylesheet" href="/css/HomeSS.css" />
+    <script src="https://kit.fontawesome.com/f6e01c63b6.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>
+            <div class="img-Con"> <img src="/css/Images/1p.jpg" /> </div>
+            Shendrit Beqa
+        </header>
+        <ul>
+            <li class=""> <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a> </li>
+            <li class=""> <a class="" asp-area="" asp-controller="Home" asp-action="Index">About</a> </li>
+            <li class=""> <a class="" asp-area="" asp-controller="Home" asp-action="Index">Projects</a> </li>
+            <li class=""> <a class="" asp-area="" asp-controller="Home" asp-action="Index">Contact</a> </li>
+            <li class=""> <a class="" asp-area="" asp-controller="Home" asp-action="Index">Comments</a> </li>
+        </ul>
+    </div>
+    <section id="Main">
+        <div class="Main-block">
+            <h1 style="font-size:30px;">Hi,</h1>
+            <h2 id="MainText">Just a student that can't center a text</h2>
+            <br />
+            <a asp-area="" asp-controller="Home" asp-action="Index">Contact me</a>
+        </div>
+      
+    </section>
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="">
+        <div class="">
+            &copy; 2022 - MyPortfolio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
