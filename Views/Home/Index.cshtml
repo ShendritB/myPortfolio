@@ -2,6 +2,7 @@
     ViewData["Title"] = "Home Page";
 
 }
+@model Message
 
 <head>
     <link rel="stylesheet" href="/css/HomeSS.css" />
@@ -112,21 +113,25 @@
                     </div>
                 </div>
                 <div class="contactForm">
-                    <form>
-                        <h2>Send Messages</h2>
+                    <form method="post" asp-action="Index">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <h2>Send Messages</h2>  
                         <div class="inputBox">
-                            <input type="text" name="" placeholder="Full Name...">
-                        
+                            <label>Name</label>
+                            <input asp-for="Name" class="form-control"/>
+                            @*<input type="text" name="" placeholder="Full Name...">*@
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="" placeholder="Your Email...">
-             
+                            <label>Email</label>
+                            <input asp-for="Email" class="form-control" />
+                            @*<input type="text" name="" placeholder="Your Email...">*@
                         </div>
                         <div class="inputBox">
-                            <textarea placeholder="Your Message..."></textarea>
+                            <label>Message</label>
+                            <textarea asp-for="message" class="form-control" placeholder="Your Message..."></textarea>
                         </div>
                         <div class="inputBox">
-                            <input type="submit" value="Send">
+                            <input type="submit" value="Send"> 
                         </div>
                     </form>
 
