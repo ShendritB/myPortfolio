@@ -27,30 +27,34 @@
             <li class=""> <a class="" asp-area="" asp-controller="Home" asp-action="Index">About</a> </li>
             <li class=""> <a class="" asp-area="" asp-controller="Home" asp-action="Index">Projects</a> </li>
             <li class=""> <a class="" asp-area="" asp-controller="Home" asp-action="Index">Contact</a> </li>
-            <li class=""> <a class="" asp-area="" asp-controller="Home" asp-action="Index">Comments</a> </li>
         </ul>
     </div>
     <section id="Main">
         <div class="Main-block">
-            <h1 style="font-size:30px;">Hi,</h1>
-            <h2 id="MainText">Just a student that can't center a text</h2>
+            <h1 style="font-size:30px;">Hello!</h1>
+            <h2 id="MainText">I'm just a student on his journey to hone his skills</h2>
+            <br />
             <br />
             <a asp-area="" asp-controller="Home" asp-action="Index">Contact me</a>
         </div>
-      
+
     </section>
     <main>
         @RenderBody()
     </main>
-
-    <footer class="">
-        <div class="">
-            &copy; 2022 - MyPortfolio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="footer">
+        <div class="footerTxt">
+            <p> All rights reserved &copy; 2022 - MyPortfolio<a asp-area="" asp-controller="Home" asp-action="index"></a></p>
+        </div>
+        <div class="icons">
+            <a style="padding-right:15px;" href="https://www.facebook.com/shendrit.beqa"> <i class="fab fa-facebook-square"></i></a>
+            <a href="https://github.com/ShendritB"> <i class="fab fa-github"></i></a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

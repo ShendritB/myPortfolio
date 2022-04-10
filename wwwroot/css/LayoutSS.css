@@ -32,10 +32,10 @@
 
         .sidebar ul li:hover a {
             padding-left: 60px;
-            color: #FFB703;
+            color: #F55353;
             transition: 0.5s;
-            border-left: 5px #FFB703 solid;
-            border-right: 5px #FFB703 solid;
+            border-left: 5px #F55353 solid;
+            border-right: 5px #F55353 solid;
             border-radius: 10px;
         }
 
@@ -59,6 +59,10 @@ header {
     padding-bottom: 10px;
     color: #ffffff;
 }
+    header:hover {
+        color:#F55353;
+        transition:1s;
+    }
 
 #check {
     display: none;
@@ -75,7 +79,7 @@ label #btn {
     left: 40px;
     top: 25px;
     font-size: 35px;
-    color: white;
+    color: #F55353;
     padding: 6px 12px
 }
 
@@ -85,7 +89,7 @@ label #cancel {
     top: 17px;
     padding: 6px 12px;
     font-size: 30px;
-    color: #ffffff;
+    color: #F55353;
     transition: all .5s ease;
 }
 
@@ -116,9 +120,11 @@ label #cancel {
     height: 100vh;
     text-align: center;
     align-content: center;
-    vertical-align: middle;
     color: white;
 }
+    #Main h1 {
+        padding-top: 45vh;
+    }
 
     #Main a {
         position: relative;
@@ -133,7 +139,23 @@ label #cancel {
     }
 
         #Main a:hover {
-            color: #FFB703;
-            border: 2px #FFB703 solid;
+            color: #F55353;
+            border: 2px #F55353 solid;
             transition: 0.5s;
         }
+
+
+footer {
+
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #15152b;
+    color: white;
+}
+
+.icons{
+    margin-top:30px;
+    padding:10px;
+}
